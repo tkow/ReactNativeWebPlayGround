@@ -3,6 +3,6 @@ import { Animated } from 'react-native'
 
 
 export const AnimatedView = styled(Animated.View)`
-  margin: 16px;
-  color: white;
+  margin: 26px;
+  color: white
 `
