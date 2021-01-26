@@ -1,6 +1,6 @@
 import React from 'react'
 import { BaseButton } from './index'
-import { BuiltinStyledPressableButton } from './style'
+import { BuiltinStyledPressableButton, StyledPressableButton } from './style'
 import { StyleSheet, Text as Typography } from 'react-native'
 import { action } from '@storybook/addon-actions'
 
@@ -29,7 +29,7 @@ export const Story = () => (
   </>
 )
 
-export const BuiltinStyleWrong = () =>(
+export const BuiltinPressableStyleTest = () =>(
   <BuiltinStyledPressableButton
     onPress={action('onPress')}
     style={(state) => {
@@ -40,6 +40,19 @@ export const BuiltinStyleWrong = () =>(
   >
     <Typography style={styles.text}>builtin styled.Pressable</Typography>
   </BuiltinStyledPressableButton>
+)
+
+export const StyledExtendPressableTest = () =>(
+  <StyledPressableButton
+    onPress={action('onPress')}
+    style={(state) => {
+      return {
+        opacity: state.pressed ? 0.4 : 1,
+      }
+    }}
+  >
+    <Typography style={styles.text}>builtin styled.Pressable</Typography>
+  </StyledPressableButton>
 )
 
 

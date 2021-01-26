@@ -1,0 +1,3 @@
+[submodule "styled-components"]
+	path = styled-components
+	url = https://github.com/tkow/styled-components.git

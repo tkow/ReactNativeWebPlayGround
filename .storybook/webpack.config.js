@@ -37,7 +37,7 @@ module.exports = ({ config }) => {
   config.resolve.alias = {
     // replace `react-native` imports with `react-native-web`
     'react-native$': require.resolve('react-native-web'),
-    'babel-loader': require.resolve('@storybook/core/node_modules/babel-loader')
+    'babel-loader': require.resolve('@storybook/core/node_modules/babel-loader'),
   }
 
   config.resolve.extensions.push('.ts', '.tsx')

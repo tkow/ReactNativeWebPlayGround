@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react'
+
 import styled from 'styled-components/native'
 import {
   Pressable as RNPressable,
@@ -37,6 +38,13 @@ export const Button = styled(Pressable)<RNPressableProps>`
 `
 
 export const BuiltinStyledPressableButton = styled.Pressable<RNPressableProps>`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`
+
+export const StyledPressableButton = styled(Pressable)<RNPressableProps>`
   display: flex;
   flex-direction: row;
   justify-content: center;
